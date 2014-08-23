@@ -18,6 +18,7 @@ apt-get remove -y gcc libc6-dev curl python perl apt-utils && \
 apt-get autoremove -y && \
 apt-get autoclean -y && \
 apt-get purge -y && \
+apt-get install git -y && \
 rm -rf /gopath/*
 
 ENV GOROOT /usr/local/go
